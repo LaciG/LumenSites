@@ -36,7 +36,7 @@ class Auth0Middleware
         try {
             $verifier = new JWTVerifier([
               'supported_algs' => ['RS256'],
-              'valid_audiences' => ['https://authorsapi.com/'],
+              'valid_audiences' => ['https://authorsapi.com'],
               'authorized_iss' => ['https://lacig.eu.auth0.com/']
             ]);
 
